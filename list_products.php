@@ -62,8 +62,8 @@ try {
                                 [Sem Imagem]
                             <?php endif; ?>
                         </td>
-                        <td><?php echo htmlspecialchars($produto['nome']); ?></td>
-                        <td><?php echo htmlspecialchars($produto['descricao']); ?></td>
+                        <td><?php echo $produto['nome']; ?></td> <!-- ALTERADO AQUI: Removido htmlspecialchars() -->
+                        <td><?php echo $produto['descricao']; ?></td>
                         <td>R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></td>
                         <td><?php echo htmlspecialchars($produto['estoque']); ?></td>
                         <td>
